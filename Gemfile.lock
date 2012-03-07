@@ -1,17 +1,3 @@
-PATH
-  remote: ~/src/minnie
-  specs:
-    minnie (0.1.2)
-      bcrypt-ruby (~> 3.0)
-      railties (~> 3.0)
-
-PATH
-  remote: ~/src/minnie-ldap
-  specs:
-    minnie-ldap (0.0.1)
-      minnie
-      net-ldap
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -67,6 +53,12 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.17.2)
+    minnie (0.1.3)
+      bcrypt-ruby (~> 3.0)
+      railties (~> 3.0)
+    minnie-ldap (0.0.2)
+      minnie
+      net-ldap
     multi_json (1.1.0)
     net-ldap (0.3.1)
     polyglot (0.3.3)
@@ -121,8 +113,8 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
-  minnie!
-  minnie-ldap!
+  minnie
+  minnie-ldap
   rails (= 3.2.1)
   sass-rails (~> 3.2.3)
   sqlite3
